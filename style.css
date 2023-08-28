@@ -1,0 +1,51 @@
+h1 {
+    font-family: monospace;
+    color: orange;
+}
+
+.container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: teal;
+    width: 150px;
+    height: 150px;
+    margin: 1px;
+    border-radius: 10px;
+    transition: all 0.5;
+    border: 2px solid darkkhaki;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box:hover {
+    background-color: turquoise;
+    box-shadow: 10 20 10px red;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+.animated-element {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: move 2s ease-in-out infinite alternate;
+}
